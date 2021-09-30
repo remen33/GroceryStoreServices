@@ -14,7 +14,10 @@ namespace GroceryStoreServices.Api.Book.Test
 {
     public class BookServiceTest
     {
-
+        /// <summary>
+        ///  Get Test's data 
+        /// </summary>
+        /// <returns></returns>
         private IEnumerable<Library> GetTestData()
         {
             A.Configure<Library>()
@@ -98,7 +101,7 @@ namespace GroceryStoreServices.Api.Book.Test
         [Fact]
         public async void CreateBook()
         {
-            // Arane
+            // Arange
             var options = new DbContextOptionsBuilder<LibraryContext>()
                 .UseInMemoryDatabase(databaseName: "BaseDatosLibro").Options;
 
