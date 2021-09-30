@@ -93,6 +93,30 @@ namespace GroceryStoreServices.Api.Book.Test
             // Assert
             Assert.NotNull(book);
         }
+
+
+        [Fact]
+        public async void CreateBook()
+        {
+            // Arane
+            var options = new DbContextOptionsBuilder<LibraryContext>()
+                .UseInMemoryDatabase(databaseName: "BaseDatosLibro").Options;
+
+            var context = new LibraryContext(options);
+
+
+            var request = new New.Execute();
+            request.Title = "Microservices book";
+            request.AuthorBook = Guid.Empty;
+            request.ReleaseDate = DateTime.Now;
+
+            /// Act
+            var handler = new New.Handler(context);
+            var result = await handler.Handle(request, new System.Threading.CancellationToken());
+
+            /// Arange
+            Assert.NotNull(result);
+        }
     }
 }
 
