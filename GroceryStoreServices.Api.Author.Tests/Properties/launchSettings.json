@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GroceryStoreServices.Api.Author.Tests": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

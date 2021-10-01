@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroceryStoreServices.Api.Au
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroceryStoreServices.Api.Book", "GroceryStoreServices.Api.Book\GroceryStoreServices.Api.Book.csproj", "{BDB5DB8B-6C2C-46A0-B6E0-00D13D1EBCB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryStoreServices.Api.Book.Test", "GroceryStoreServices.Api.Book.Test\GroceryStoreServices.Api.Book.Test.csproj", "{DAD18585-AE24-4D8C-9752-35174C26221A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroceryStoreServices.Api.Book.Test", "GroceryStoreServices.Api.Book.Test\GroceryStoreServices.Api.Book.Test.csproj", "{DAD18585-AE24-4D8C-9752-35174C26221A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{67EB4FDB-9194-4F24-89B3-17D71B6E11F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryStoreServices.Gateway", "GroceryStoreServices.Gateway\GroceryStoreServices.Gateway.csproj", "{38EFC3E8-D895-42F2-ABD8-C9C39619BE01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{DAD18585-AE24-4D8C-9752-35174C26221A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAD18585-AE24-4D8C-9752-35174C26221A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAD18585-AE24-4D8C-9752-35174C26221A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67EB4FDB-9194-4F24-89B3-17D71B6E11F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67EB4FDB-9194-4F24-89B3-17D71B6E11F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67EB4FDB-9194-4F24-89B3-17D71B6E11F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67EB4FDB-9194-4F24-89B3-17D71B6E11F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38EFC3E8-D895-42F2-ABD8-C9C39619BE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38EFC3E8-D895-42F2-ABD8-C9C39619BE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38EFC3E8-D895-42F2-ABD8-C9C39619BE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38EFC3E8-D895-42F2-ABD8-C9C39619BE01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  grocerystoreservices.api.autor:
+    image: ${DOCKER_REGISTRY-}grocerystoreservicesapiautor
+    build:
+      context: .
+      dockerfile: GroceryStoreServices.Api.Autor/Dockerfile
+  grocerystoreservices.gateway:
+    image: ${DOCKER_REGISTRY-}grocerystoreservicesgateway
+    build:
+      context: .
+      dockerfile: GroceryStoreServices.Gateway/Dockerfile
+
+networks:
+  default:
+    external:
+      name: microservicesnet

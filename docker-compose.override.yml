@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  grocerystoreservices.api.autor:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "6104:80"
+  grocerystoreservices.gateway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - grocerystoreservices.api.autor
+    ports:
+      - "6107:80"
+
